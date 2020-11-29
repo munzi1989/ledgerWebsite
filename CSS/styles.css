@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -50,7 +52,12 @@ img {
     position: fixed;
     top: 0px;
     padding: 0 30px;
+    transition: 0.5s;
 }
+
+ .navbar.top {
+     background: transparent;
+ }
 
 .navbar a {
     color: white;
@@ -70,6 +77,8 @@ img {
     font-weight: 400;
 }
 
+
+
 /* Header */
 .hero {
     background: url('../images/home/showcase.jpg') no-repeat center center/cover;
@@ -87,6 +96,8 @@ img {
     height: 100%;
     padding: 20px;
 }
+
+
 
 
 .hero .content h1 {
@@ -157,6 +168,43 @@ img {
     margin-top: 20px;
 }
 
+/* team */
+/* .team {
+    height: 100%;
+    margin-top: 20vh;
+} */
+
+.blog-page {
+    background: url('../images/home/blog.jpg') no-repeat center center/cover;
+    height: 60vh;
+}
+
+/* Post */
+
+.post {
+    padding: 50px 30px;
+    
+    font-size: 1.3rem;
+}
+
+.post h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 60%;
+    height: 30vh;
+    /* border-radius: 50%; */
+    display: block;
+    margin: 0 auto 30px;
+}
 
 /* Footer */
 .footer {
@@ -182,10 +230,6 @@ img {
 footer p {
     padding: 10px;
     margin: 20px;
-}
-
-.blog {
-    flex-direction: reverse;
 }
 
 
@@ -233,6 +277,10 @@ footer p {
     .blog a, .blog p, .blog h2, .blog h4 {
         text-align: center;
         align-self: center;
+    }
+
+    .blog-page {
+        padding-top: 30px;
     }
 
     .contact h2 {
